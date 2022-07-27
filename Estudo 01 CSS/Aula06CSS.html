@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Cores no CSS</title>
+</head>
+<style>
+  div {
+    color: steelblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-style: inherit;
+  }
+
+  div:nth-child(1) {
+    /* Seletor de cores */
+    background: #411530;
+  }
+
+  div:nth-child(2) {
+    background: #D1512D;
+  }
+
+  div:nth-child(3) {
+    background: #F5C7A9;
+  }
+
+  div:nth-child(4) {
+    background: #F5E8E4;
+  }
+</style>
+
+<body>
+  <!-- Tudo o que estiver no body será afetado pelo seletor "nth-child()" -->
+
+  <div>
+    #411530;
+  </div>
+
+  <div>
+    #D1512D;
+  </div>
+
+  <div>
+    #F5C7A9;
+  </div>
+
+  <div>
+    #F5E8E4;
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Especificidade no CSS
+  </title>
+  <style>
+    /* 0.0.0.1 */
+    p {
+      color: blueviolet;
+    }
+
+    /* 0.0.1.1 */
+    .novaCor {
+      color: brown;
+    }
+
+    /* 0.1.0.1 */
+    #novaCor {
+      color: blue;
+    }
+
+    /* 0.1.1.1 */
+    #novaCor01,
+    .novaCor01 {
+      color: aqua;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p>Texto 01.</p>
+  <p class="novaCor">Texto 02.</p>
+  <p id="novaCor">Texto 03.</p>
+  <p id="novaCor01" class="novaCor01">Texto 04.</p>
+  <!-- /* 1.1.1.1 */ -->
+  <p id="novaCor02" class="novaCor02" style="color:darkgrey">Texto 05.</p>
+</body>
+
+</html>

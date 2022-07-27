@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Herança no CSS</title>
+</head>
+
+<style>
+  article {
+    /* Atributos do pai/avô */
+    font-size: 30px;
+    color: blueviolet;
+  }
+
+  article section article p {
+    /* Atributos dos netos/filhos e sobrinhos */
+    color: aqua;
+  }
+</style>
+
+<body>
+
+  <article>
+    <!-- Pai -->
+    Pai 00
+    <section>
+      <!-- Filho 00 -->
+      <p>
+        Filho 00
+      </p>
+      <article>
+        <p>
+          Teve um filho (Neto do Pai 00 e Sobrinho do Filho 01)
+        </p>
+      </article>
+
+    </section>
+
+    <section>
+      <!-- Filho 01 -->
+      <p>Filho 01</p>
+      <article>
+        <p>
+          Teve um filho (Neto do Pai 00 e Sobrinho do Filho 00)
+        </p>
+      </article>
+    </section>
+  </article>
+</body>
+
+</html>

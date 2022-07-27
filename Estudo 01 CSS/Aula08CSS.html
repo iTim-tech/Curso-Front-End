@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Margin, Padding e Border</title>
+  <style>
+    /*Margem da caixa:
+    /* top, right, bot, left
+          0   . 0   .  0  . 0
+      */
+    div {
+      background: hotpink;
+      color: #FFF;
+
+      /* top  right bot   left */
+      margin: 100px 100px 100px 100px;
+
+      /* Borda da caixa: */
+      border-top: 20px solid blueviolet;
+      /* "solid" é um dos vários tipos de borda que temos no CSS*/
+      border-right: 20px solid blueviolet;
+      border-bottom: 20px solid blueviolet;
+      border-left: 20px solid blueviolet;
+
+      /* Parte interna da caixa: */
+      padding: 25px 25px 25px 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    Texto genérico 00!
+  </div>
+
+  <hr />
+
+  <div>
+    Texto genérico 01!
+  </div>
+
+</body>
+
+</html>

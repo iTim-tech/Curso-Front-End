@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Form</title>
+</head>
+
+<body>
+  <h2>Preencha o Formulário:</h2>
+  <form>
+    <div>
+      <label for="nome">Nome
+        <input type="texto" id="nome" />
+      </label>
+    </div>
+
+    <div>
+      <label for="email">E-mail
+        <input type="email" id="email" required />
+      </label>
+    </div>
+
+    <h2>
+      Precificação
+    </h2>
+    <div>
+      <label>
+        <input type="radio" name="preco" value="150"> R$ 150,00
+      </label>
+      <label>
+        <input type="radio" name="preco" value="200"> R$ 200,00
+      </label>
+      <label>
+        <input type="radio" name="preco" value="250"> R$ 250,00
+      </label>
+      <label>
+        <input type="radio" name="preco" value="300"> R$ 300,00
+      </label>
+    </div>
+
+    <h2>
+      Precificação Variada:
+    </h2>
+
+    <div>
+      <label>
+        <input type="checkbox" name="variosPrecos" value="150"> R$ 150,00
+      </label>
+
+      <label>
+        <input type="checkbox" name="variosPrecos" value="200"> R$ 200,00
+      </label>
+
+      <label>
+        <input type="checkbox" name="variosPrecos" value="250"> R$ 250,00
+      </label>
+
+      <label>
+        <input type="checkbox" name="variosPrecos" value="300"> R$ 300,00
+      </label>
+
+      <label>
+        <input type="checkbox" name="variosPrecos" value="350"> R$ 350,00
+      </label>
+
+      <label>
+        <input type="checkbox" name="variosPrecos" value="400"> R$ 400,00
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <h2>
+          Seleção de produtos
+        </h2>
+        <select>
+          <option value="" selected>Selecione um produto</option>
+          <option value="Cordas Elixir">Cordas Elixir</option>
+          <option value="Palheta Fender">Palheta Fender</option>
+          <option value="Correa Basso">Correa Basso</option>
+          <option value="Cabo Santo Angelo">Cabo Santo Angelo</option>
+        </select>
+      </label>
+    </div>
+
+    <div>
+      <label>
+        <h2>
+          Digite um comentário
+        </h2>
+        <textarea>  </textarea>
+      </label>
+    </div>
+
+    <button>Enviar Formulário</button>
+  </form>
+</body>
+
+</html>
